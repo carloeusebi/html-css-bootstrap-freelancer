@@ -16,17 +16,13 @@ body{
     height: 80px;
 }
 
-*[class^="col"]{
-    border: 1px dashed black;
-}
-
 .star::after,
 .star::before{
     content: '';
     display: inline-block;
     min-width: 10vw;
     max-width: 15vw;
-    border: 2px solid white;
+    border: 2px solid currentColor;
     vertical-align: middle;
 }
 
