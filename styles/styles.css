@@ -1,11 +1,51 @@
-/* css reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --header-color: #2c3e50;
+    --first-color: #1abc9c;
+    --second-color: #3a546d;
 }
 
 body{
-    font-family: sans-serif;
+    color: white;
+}
+
+#navbar{
+    background-color: var(--header-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header,
+main,
+footer,
+section{
+    min-height: 80px;
+}
+
+*[class^="col"]{
+    border: 1px dashed black;
+    min-height: 50px;
+}
+
+main >*:nth-child(odd){
+    background-color: var(--first-color);
+}
+
+main >*:nth-child(even){
+    color: var(--header-color);
+}
+
+#contact-me-form{
+    border: 1px dashed var(--header-color);
+    min-height: 50px;
+}
+
+.footer-top{
+    background-color: var(--second-color);
+    min-height: 80px;
+}
+
+.footer-bottom{
+    background-color: var(--header-color);
+    min-height: 80px;
 }
