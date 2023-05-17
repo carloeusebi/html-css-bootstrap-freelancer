@@ -13,18 +13,21 @@ body{
     position: sticky;
     top: 0;
     left: 0;
-}
-
-header,
-main,
-footer,
-section{
-    min-height: 80px;
+    height: 80px;
 }
 
 *[class^="col"]{
     border: 1px dashed black;
-    min-height: 50px;
+}
+
+.star::after,
+.star::before{
+    content: '';
+    display: inline-block;
+    min-width: 10vw;
+    max-width: 15vw;
+    border: 2px solid white;
+    vertical-align: middle;
 }
 
 main >*:nth-child(odd){
@@ -33,6 +36,21 @@ main >*:nth-child(odd){
 
 main >*:nth-child(even){
     color: var(--header-color);
+}
+
+#hero img{
+    max-width: min(50%, 300px);
+}
+
+#hero ul{
+    list-style: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+#hero ul li:not(:last-of-type)::after{
+    content: '-';
+    padding: 0 2px;
 }
 
 #contact-me-form{
