@@ -29,6 +29,10 @@ body{
     vertical-align: middle;
 }
 
+section{
+    scroll-margin-top: 50px;
+}
+
 main >*:nth-child(odd){
     background-color: var(--first-color);
 }
