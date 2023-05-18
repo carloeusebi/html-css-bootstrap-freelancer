@@ -56,9 +56,21 @@ main >*:nth-child(even){
     padding: 0 2px;
 }
 
-#contact-me-form{
-    border: 1px dashed var(--header-color);
-    min-height: 50px;
+#contact-me .btn{
+    background-color: var(--first-color);
+    color: white;
+}
+
+#contact-me ::placeholder{
+    color: black;
+}
+
+#contact-me textarea{
+    resize: none;
+}
+
+#contact-me .form-control:focus{
+    box-shadow: none;
 }
 
 .social-icons >*{
