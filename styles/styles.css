@@ -8,12 +8,15 @@ body{
     color: white;
 }
 
-#navbar{
+#header-navbar{
     background-color: var(--header-color);
     position: sticky;
     top: 0;
     left: 0;
-    height: 80px;
+}
+
+#header-navbar a{
+    color: white;
 }
 
 .star::after,
